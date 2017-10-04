@@ -1,5 +1,45 @@
-header{
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+html{
+    height: 100%;
     width: 100%;
-    height: auto;
-    background-color: gray;
+}
+body{
+    margin: 0 !important;
+    position: relative;
+    display: grid;
+    top: -21px;
+    grid-template-columns: 18% 41% 41%;
+    height: 100%;
+    width: 100%;
+}
+.aside{
+    display: grid;
+    grid-column: 1;
+    background-color: #2A2A2A;
+    /**width: 25%;**/
+    height: 100%;
+    padding-bottom: 21px;
+    -webkit-box-shadow: 2px 0px 5px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 2px 0px 5px -2px rgba(0,0,0,0.45);
+    box-shadow: 2px 0px 5px -2px rgba(0,0,0,0.45);
+    min-width: 302px;
+
+
+
+}
+.frontName{
+    justify-self: center;
+}
+.frontName a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+
+
+}
+.frontName a:visited{
+    color: white;
+}
+.main{
+    grid-area: main;
 }
