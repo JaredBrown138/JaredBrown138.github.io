@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Nova+Mono|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Nova+Mono|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+
+
+html{
+ background-color: #181818;
+}
+
+body{
+
+}
+
+.atom{
+    margin: auto;
+    width: 600px;
+    -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.49);
+    -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.49);
+    box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.49);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.atomHeading{
+    text-align: center;
+    font-family: 'Nova Mono', monospace;
+    text-decoration: underline;
+}
+h1{
+    font-family: 'Fugaz One', cursive;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+#heading{
+    border-left: 20px solid #8299ED;
+}
+#subheading{
+    border-left: 20px solid #A89DED;
+}
+#paragraph{
+    border-left: 20px solid #DCCAD6;
+}
+figure{
+    width: 348px;
+    margin: auto;
+}
+#photo{
+    border-left: 20px solid #F3E3D9;
+}
+figcaption{
+    font-family: 'Rubik', sans-serif;
+    font-size: .7em;
+    margin-top: 20px;
+}
+img{
+    border: 20px solid white;
+    -webkit-box-shadow: 0 -1px 10px 6px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 -1px 10px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 -1px 10px 6px rgba(0,0,0,0.12);
+    position: relative;
+    left: -20px;
+}
+.asideMenu a{
+    display: block;
+    padding: 10px;
+}
+.asideMenu a{
+    display: block;
+    width: 70%;
+    background-color: #181818;
+    font-size: 1.5em;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    -webkit-box-shadow: 0 0 12px 2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0 0 12px 2px rgba(0,0,0,0.29);
+    box-shadow: 0 0 12px 2px rgba(0,0,0,0.29);
+    border: 1px solid white;
+    border-left: 35px solid white;
+
+}
+
+.asideMenu a:nth-of-type(1){
+    color: #8299ED;
+    border-color: #8299ED;
+}
+
+.asideMenu a:nth-of-type(2){
+    color: #A89DED;
+    border-color: #A89DED;
+}
+
+.asideMenu a:nth-of-type(3){
+    color: #DCCAD6;
+    border-color: #DCCAD6;
+}
+
+.asideMenu a:nth-of-type(4){
+    color: #F3E3D9;
+    border-color: #F3E3D9;
+}
+
+.asideMenu a:nth-of-type(5){
+    color: #f0a4e2;
+    border-color: #f0a4e2;
+}
+
+.asideMenu a:nth-of-type(6){
+    color: #ede4a4;
+    border-color: #ede4a4;
+}

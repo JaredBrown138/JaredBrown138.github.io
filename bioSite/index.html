@@ -1,0 +1,122 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="biostyles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600i|Source+Code+Pro:200" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="content/content.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+    <title>Jean Brown</title>
+</head>
+<body>
+
+    <div class="asideMenu" onmouseenter="asideHover(true)" onmouseleave="asideHover(false)">
+
+        <img class="profilePhoto" alt="A Picture of Jean" src="media/profilephoto.jpg">
+        <a href="index.html"><h3 class="name">Jean Brown</h3></a>
+
+        <div class="decadeContainer">
+
+            <button class="decadeButton" onclick="sectionSelect(1);"> Into the World</button>
+            <button class="decadeButton" onclick="sectionSelect(2);"> On the Lake </button>
+            <button class="decadeButton" onclick="sectionSelect(3);"> Off to School </button>
+            <button class="decadeButton" onclick="sectionSelect(4);"> Settling Down </button>
+            <button class="decadeButton" onclick="sectionSelect(5);"> Finding Purpose </button>
+            <button class="decadeButton" onclick="sectionSelect(6);"> Making an Impact </button>
+
+        </div>
+
+        <div class="githubBox">
+            <img class="githubPhoto" alt="Github Logo" src="media/githubLogo.png" />
+            <a class="githubLink" href="https://github.com/JaredBrown138/BioSite"><h3>View the Source Code</h3></a>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="innerContainer">
+
+            <h1> Meet Jean Brown </h1>
+
+            <p>
+
+                <img class="eraPhoto" alt="Jean and her daughter" src="media/Jean2.jpg" />
+
+                Jean Brown is a passionate teacher and pastor who loves being a part of her students’ lives. She takes a special
+                interest into the struggles of impoverished students and those with difficult home lives. She began her
+                teaching career teaching the children of migrant workers during the summer in Brockport, NY. She then
+                began to teach preschoolers for a local preschool. When she moved to Jamestown, NY she became a teacher
+                at HeadStart which provides preschool to families with low incomes. In her free time, she enjoys going
+                to the movies with friends and family, volunteering at church, relaxing on the patio with a good book,
+                and going on adventures.
+
+            </p>
+
+
+        </div>
+
+        <div class="timeline">
+            <table>
+                <tr>
+                    <td class="year" id="year1">
+                        '68
+                    </td>
+                    <td>
+                        <div class="segment 2"></div>
+                    </td>
+                    <td>
+                        <div class="segment 2"></div>
+                    </td>
+                    <td class="year" id="year2">
+                        '78
+                    </td>
+                    <td>
+                        <div class="segment 3"></div>
+                    </td>
+                    <td>
+                        <div class="segment 3"></div>
+                    </td>
+                    <td class="year" id="year3">
+                        '88
+                    </td>
+                    <td>
+                        <div class="segment 4"></div>
+                    </td>
+                    <td>
+                        <div class="segment 4"></div>
+                    </td>
+                    <td class="year" id="year4">
+                        '98
+                    </td>
+                    <td>
+                        <div class="segment 5"></div>
+                    </td>
+                    <td>
+                        <div class="segment 5"></div>
+                    </td>
+                    <td class="year" id="year5">
+                        '08
+                    </td>
+                    <td>
+                        <div class="segment 6"></div>
+                    </td>
+                    <td>
+                        <div class="segment 6"></div>
+                    </td>
+                    <td class="year" id="year6">
+                        present
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button class="backBttn" onclick="seekEra(0)"> Back </button>
+        <button class="nextBttn" onclick="seekEra(1)"> Next </button>
+
+    </div>
+    <script> preloadImages(imagePaths);</script>
+</body>
+
+
+
+</html>
