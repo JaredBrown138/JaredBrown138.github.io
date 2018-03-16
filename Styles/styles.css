@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Nova+Mono|Rubik");
+body {
+  min-width: 1145px;
+}
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr 0.9fr;
+  -webkit-box-shadow: 9px 11px 5px -7px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 9px 11px 5px -7px rgba(0, 0, 0, 0.24);
+  box-shadow: 9px 11px 5px -7px rgba(0, 0, 0, 0.24);
+}
+.wrapper > div {
+  background-color: rgb(12, 12, 12);
+  height: 75px;
+}
+.half-circle {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: rgb(12, 12, 12);
+  -webkit-box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.24);
+}
+.header-title {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 25px;
+  color: white;
+  font-family: "Bungee Shade", cursive;
+}
+.item-set {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects-item {
+  width: 100%;
+}
+.skills-item {
+  width: 100%;
+}
+.menu-item {
+  position: relative;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 16pt;
+}
+.menu-item:hover {
+  border-bottom: 5px orange solid;
+}
+.row-two-wrapper {
+  position: relative;
+  top: 75px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card-container {
+  width: 100%;
+}
+.card {
+  margin: 0 auto;
+  position: relative;
+  width: 70% !important;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.32);
+}
+.card-left {
+  margin-right: 20% !important;
+}
+.profile-card {
+  position: relative;
+  width: 100% !important;
+}
+.card-right {
+  margin-left: 20% !important;
+}
+.card-title {
+  margin-bottom: 2px;
+}
+.card-text {
+  margin-top: 20px;
+}
+.card-body > .btn {
+  background-color: rgb(12, 12, 12);
+  border: 0px solid;
+}
+.background-img-card {
+  background-image: url("../Media/Photos/brick-background.jpg") !important;
+  background-size: 100% 100%;
+  min-height: 410px;
+}
+.card-img-top > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin: auto;
+  top: 10%;
+  border-radius: 360px;
+  border: 7px solid white;
+  max-width: 250px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+}
+
+
+
+.row-four-wrapper {
+  display: grid;
+  position: relative;
+  top: 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 75px;
+  min-height: 400px;
+}
+.bottom-padding {
+  height: 400px;
+  width: 100%;
+}
+.education {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  top: 150px;
+}
+.education > div.card {
+  width: 93% !important;
+  margin: auto;
+}
+.card {
+  border: none !important;
+  width: 100%;
+}
+
+.tech-card > .card-img-top {
+  margin-bottom: 15px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+.tech-card > .card-body {
+  background-color: #f7f7f7;
+  text-align: center;
+  border-top: 1px solid lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Rubik", sans-serif;
+}
+.tech-card {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tech-html {
+  border-bottom: 20px solid rgb(241, 101, 41);
+}
+.tech-js {
+  border-bottom: 20px solid rgb(243, 223, 73);
+}
+.tech-php {
+  border-bottom: 20px solid rgb(119, 123, 179);
+}
+.tech-angular {
+  border-bottom: 20px solid rgb(221, 3, 48);
+}
+.profile-card-heading{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16pt;
+    padding-bottom: 10px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+.profile-card-heading:hover{
+    background-color: orange;
+}
+.description{
+    
+}
+.sub-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+.row-three-container{
+  top: 125px;
+  position: relative;
+  width: 100% !important;
+  margin: auto;
+  padding-bottom: 60px;
+  background-image: linear-gradient(to right bottom, #191919, #463041, #864252, #ba6045, #cd9429);
+
+}
+.gallery-header{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: white;
+  border-bottom: 1px solid rgb(199, 199, 199);
+
+}
+.card-title{
+  font-family: "Rubik", sans-serif;
+}
+.menu-link:hover{
+  text-decoration: none !important;
+}
