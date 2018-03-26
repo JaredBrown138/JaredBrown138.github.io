@@ -255,13 +255,13 @@ body {
 }
 
 .expandCard0{
-  visibility: collapse;
+  display: none;
 }
 .expandCard1{
-  visibility: collapse;
+  display: none;
 }
 .expandCard2{
-  visibility: collapse;
+  display: none;
 }
 
 .unselectable {

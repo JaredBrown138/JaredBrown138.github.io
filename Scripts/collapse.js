@@ -25,10 +25,10 @@ $(function() {
 function toggleCard( expandNumber ){
     var toggleCardElements = [".expandCard0", ".expandCard1", ".expandCard2"];
 
-    if ( $(toggleCardElements[expandNumber]).css("visibility") == "collapse"){
-        $(toggleCardElements[expandNumber]).css("visibility", "visible");
+    if ( $(toggleCardElements[expandNumber]).css("display") == "none"){
+        $(toggleCardElements[expandNumber]).css("display", "inline");
     }
     else{
-        $(toggleCardElements[expandNumber]).css("visibility", "collapse");
+        $(toggleCardElements[expandNumber]).css("display", "none");
     }
 }
