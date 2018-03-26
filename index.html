@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="Styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="Scripts/collapse.js"></script>
+    <script src="Scripts/linkObf.js"></script>
+   
 </head>
 
 <body>
-    <div class="wrapper">
+        
+    <div class="menu-wrapper">
         <div class="item-set">
             <div class="projects-item">
                 <a class="menu-link" href="#Projects">
@@ -61,8 +64,8 @@
                 <div class="card-img-top background-img-card">
                     <img src="Media/Photos/profile.jpg" alt="Card image cap">
                 </div>
-                <div class="profile-card-heading">About Jared</div>
-                <div class="card-body description">
+                <div class="profile-card-heading expand0 unselectable">About Jared</div>
+                <div class="card-body description expandCard0">
                     <p class="card-text">Hello! I'm Jared, a web developer who like most other developers likes creating awesome things. I don't
                         really know where I am going with this text, but thats okay because I still have time to figure it
                         out. Also, not to toot my own horn or anything, but I created the menu up above without bootstrap,
@@ -103,9 +106,10 @@
                         <img class="card-img-top" src="Media/Photos/bioSite.PNG" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Jean Brown's BioSite</h5>
-                            <span class="badge badge-primary">Completed</span>
+                            <span class="badge badge-primary">Completed</span> 
                             <p class="card-text">A SPA BioSite about my Mother, built using HTML/CSS/JS and jQuery!</p>
                             <a href="https://github.com/JaredBrown138/web-200-biosite" class="btn btn-primary">View on Github</a>
+                            <a href="https://jaredbrown138.github.io/bioSite/" class="btn btn-primary hosted">View Site</a>
                         </div>
                     </div>
                 </div>
@@ -117,6 +121,7 @@
                             <span class="badge badge-primary">Completed</span>
                             <p class="card-text">A pattern library made for my BioSite project. Made for Web 200 at Bellevue</p>
                             <a href="https://github.com/JaredBrown138/web-200-biosite/tree/master/PatternLibrary" class="btn btn-primary">View on Github</a>
+                            <a href="https://jaredbrown138.github.io/bioSite/PatternLibrary/PatternExamples.html" class="btn btn-primary hosted">View Site</a>
                         </div>
                     </div>
                 </div>
@@ -192,36 +197,76 @@
 
     </div>
     <div id="Education" class="education">
-        <div class="card">
+        <h1 id="Projects" class="gallery-header">Education</h1>
+        <div class="card education-card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Associates In Information Technology - Jamestown Community College
+                    <button class="btn btn-link expand1">
+                        Associates In Information Technology - Jamestown Community College 
                     </button>
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    This is My It Degree
+            <div class="expandCard1">
+                <div class="card-body expanded">
+                    <p>Highlights of My IT Degree</p>
+            
+                    <ul>
+                        <li>3.94 GPA</li>
+            
+                        <li>Inducted into Phi Theta Kappa National Honor Society</li>
+            
+                        <li>Classes in computer hardware</li>
+            
+                        <li>Classes in Introductory Web Development</li>
+            
+                        <li>Classes in Python, PHP and Java (focused on OOP)</li>
+            
+                        <li>Classes in Computer Aided Graphic Design and Statistics</li>
+            
+                        <li>Classes in Networking and Windows Server Administration</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card education-card">
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        Bachelors In Web Development - Bellevue University
-                    </button>
+                    <button class="btn btn-link expand2">
+                        Bachelors In Web Development - Bellevue University (Currently Attending)
                 </h5>
             </div>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    This is My It Degree
+            <div class="expandCard2">
+                <div class="card-body expanded">
+                    <p>Highlights of My Web Development Degree (In Progress)</p>
+            
+                    <ul>
+                        <li>4.0 GPA</li>
+            
+                        <li>Classes in Intermediate JS + Design Patterns</li>
+                        <li>Class in Business Communication </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bottom-padding"></div>
+    <div id="Contact" class="contact-wrapper">
+        <div class="contact-item">
+            <img id="messenger" class="contact-icon" src="Media/Photos/messenger.svg" />
+        </div>
+        <div class="contact-item">
+            <a href="https://github.com/JaredBrown138"><img class="contact-icon" src="Media/Photos/github.svg" /></a>
+        </div>
+    
+        <div id="email" class="contact-item">
+            <img class="contact-icon" src="Media/Photos/email.svg" />
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Built by Jared Brown</p>
+        <a href="#top" class="topLink">BACK TO TOP</a>
+        <p><a href="https://www.axialis.com/">Contact Icons supplied by Axialis</a></p>
+    </div>
 </body>
