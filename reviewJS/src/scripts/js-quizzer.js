@@ -3,8 +3,6 @@ var JsQuizzer = (function(){
     const QUESTIONS_PATH = "./questions/question-bank.json";
     const CLIENT_SETTINGS_PATH = "./settings/client-settings";
     
-    var settings = require(SETTINGS_PATH);
-    var questionBank = require(QUESTIONS_PATH);
     
     var questionSet = []; //Holds the set of question objects for the quiz
     
@@ -13,7 +11,7 @@ var JsQuizzer = (function(){
      * using other functions.
      */
     function setup(){
-       console.log(questionBankSize(questionBank));
+      
     }
     /** 
      * The buildQuestionSet function builds the question set by selecting 
@@ -29,7 +27,7 @@ var JsQuizzer = (function(){
      * of the question bank.
      */
     function questionBankSize(questionBank){
-        return Object.keys(questionBank).length;
+        
     }
     /**
      * Scrambles the order of the questions for the 
@@ -52,21 +50,32 @@ var JsQuizzer = (function(){
 
     }
     
-    
-    
-    
-    
-    
-    
-    
     setup();
 
     return{
         testLog: function(){
             console.log("Test");
+        },
+        testObject: {
+            "questionCount": 2,
+            "q1":{
+                "question": "____________ pause running JavaScript code.  One that is most common is _____________.",
+                "category": "General",
+                "a1": "Breakpoints; Line-of-code",
+                "a2": "Suspensions; Line-of-code",
+                "a3": "Event Listeners; XHR",
+                "a4": "DOM; Conditional line-of-code",
+                "selected": ""
+            },
+            "q2":{
+                "question": "What are object literals?",
+                "category": "Objects",
+                "a1": "Objects that are created as functions and their properties are initialized through parameterized values.",
+                "a2": "Simple event-registration methods for each of the commonly used and universally implemented browser events. ",
+                "a3": "A comma-separated list of colon-separated name:value pairs, enclosed within curly braces.",
+                "a4": "None of the above.",
+                "selected": ""
+            }
         }
     };
 });
-
-var instance = new JsQuizzer();
-instance.testLog();
