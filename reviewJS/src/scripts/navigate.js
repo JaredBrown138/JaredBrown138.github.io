@@ -3,14 +3,25 @@ const CONFIRM_MESSAGE = "Are you sure you would like to return home? " +
 
 function navigate(target){
     switch( target ){
-        case "Home": {
+        case "Home": 
             ViewModel.activeComponent("homecomponent");
             break;
-        }
-        case "actionButton":{
+        
+        case "actionButton":
             actionButton();
             break;
-        }
+        
+        case "quizzes":
+            ViewModel.activeComponent("quizzescomponent");
+            break;
+        
+        case "resources":
+            ViewModel.activeComponent("resourcescomponent");
+            break;
+        
+        case "about":
+            ViewModel.activeComponent("aboutcomponent");
+            break;        
     }
 }
 function navigateAway(){
@@ -37,6 +48,13 @@ function actionButton(){
         
     }else{
         ViewModel.activeComponent("quizcomponent");
+    }
+}
+function quizzesActionButton(){
+    if(ViewModel.initialized()){
+        ViewModel.activeComponent("quizcomponent");
+    }else{
+        ViewModel.start();
     }
 }
 //
