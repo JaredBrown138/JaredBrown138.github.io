@@ -16,6 +16,56 @@ $(function() {
     $(".expand0").click( x => {toggleCard(0)});
     $(".expand1").click( x => {toggleCard(1)});
     $(".expand2").click( x => {toggleCard(2)});
+    
+    $(".half-circle").mouseenter(function(){
+        $(".half-circle").css({
+            "animationName": "expandCard",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards"
+        });
+        $(".profile-card").css({
+            "animationName": "pushDown",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards"
+        });
+        $(".menu-item-container").css({
+            "animationName": "fadeIn",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards",
+            "display": "block"
+        })
+    });
+    $(".half-circle").mouseleave(function(){
+        $(".half-circle").css({
+            "animationName": "collapseCard",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards"
+        });
+        $(".profile-card").css({
+            "animationName": "pullUp",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards"
+        })
+        $(".menu-item-container").css({
+            "animationName": "fadeOut",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards",
+            "display": "none"
+        })
+        $(".tip").css({
+            "animationName": "fadeOut",
+            "animationDuration": "0.5s",
+            "animationIterationCount": "1",
+            "animationFillMode": "forwards",
+            "display": "none"
+        })
+    });
 });
 /**
  * Toggles the card for the respecitve item. Toggles the elements

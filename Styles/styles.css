@@ -28,7 +28,10 @@ body {
   -webkit-box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.24);
+  z-index: 200;
 }
+
+
 .header-title {
   width: 100%;
   text-align: center;
@@ -373,4 +376,114 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 100px;
+}
+@keyframes expandCard{
+  0%   {
+    height: 110px;
+  }
+  100% {
+    height: 270px;
+  }
+}
+@keyframes collapseCard{
+  0%   {
+    height: 270px;
+  }
+  
+  100% {
+    height: 110px;
+  }
+}
+@keyframes pushDown{
+  0%   {
+    margin-top: 0px;
+  }
+  
+  100% {
+    margin-top: 140px;
+  }
+}
+@keyframes pullUp{
+  0%   {
+    margin-top: 140px;
+  }
+  
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes fadeIn{
+  0%   {
+    display: block;
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut{
+  0%   {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.menu-item-container{
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  display: none;
+}
+.menu-item-link{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+.menu-item-header{
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed white;
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: center;
+}
+.tip{
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  top: 0px;
+  color: rgb(131, 131, 131);
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 11px;
+  margin-top: 3px;
+}
+.home-link{
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+  font-family: 'Ubuntu Mono', monospace;
+}
+.home-link:hover{
+  color: white;
+  text-decoration: underline;
+  background-color: orange;
+}
+.background-img-card-dia {
+  background-image: url("../Media/Photos/dia.jpg") !important;
+  background-size: 100% 100%;
+  min-height: 410px;
+}
+.dia-header{
+  width: 70%;
+  margin: auto;
+  padding: 150px;
+  background-color: white;
+  position: absolute;
+  height: 100px;
 }
