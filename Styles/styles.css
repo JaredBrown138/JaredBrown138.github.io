@@ -479,11 +479,12 @@ body {
   background-size: 100% 100%;
   min-height: 410px;
 }
-.dia-header{
-  width: 70%;
-  margin: auto;
-  padding: 150px;
-  background-color: white;
-  position: absolute;
-  height: 100px;
+.background-img-card-pres {
+  background-image: url("../Media/Photos/film.jpg") !important;
+  background-size: 100% 100%;
+  min-height: 410px;
+}
+.card > video{
+  max-width: 445px;
+  height: auto;
 }
